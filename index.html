@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Steve</title>
 
     <!-- Link to Bootstrap stylesheet -->
@@ -15,22 +15,24 @@
 
     <header>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">Features</a>
-                  <a class="nav-link" href="#">Pricing</a>
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="navbar-brand" href="#">Steve Babb</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active" aria-current="page" href="index.html">About</a>
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                        <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                    </div>
                 </div>
-              </div>
             </div>
-          </nav>
+        </nav>
         <!-- navbar-expand-md shows full link name on expanded resolution/without expand-md it show only the burger -->
         <!-- navbar-light bg-info add light gray background to have bar -->
         <!-- <nav class="navbar navbar-expand-md navbar-light bg-info">
@@ -38,21 +40,21 @@
                 <a class="navbar-brand" href="index.html">
                     Steve Babb
                 </a> -->
-                <!-- w-100 text-right force burger to stay on right side on smaller resolution -->
-                <!-- <div class="w-100 text-right"> -->
+        <!-- w-100 text-right force burger to stay on right side on smaller resolution -->
+        <!-- <div class="w-100 text-right"> -->
 
-                    <!-- Core nav button design code -->
-                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+        <!-- Core nav button design code -->
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
             </div> -->
 
-            <!-- deleted "flex-grow-1" from the class below (previously inserted before "text-right".  Didn't change page functionality. -->
-            <!-- <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7"> -->
+        <!-- deleted "flex-grow-1" from the class below (previously inserted before "text-right".  Didn't change page functionality. -->
+        <!-- <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7"> -->
 
-                <!-- deleted "flex-no-wrap" from the UL Class below.  Had no effect on page functionality -->
-                <!-- <ul class="navbar-nav ml-auto">
+        <!-- deleted "flex-no-wrap" from the UL Class below.  Had no effect on page functionality -->
+        <!-- <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a href="contact.html" class="nav-link">Contact</a>
                     </li>
@@ -67,21 +69,20 @@
         </nav> -->
     </header>
 
-        <hr>
     <main class="container">
-        <br>
 
         <!--Using one row and one column with img class "float-left" to make text wrap. Img-fluid for responsive image-->
-        <div class="row">
-            <div class="col-lg-8 bg-light">
+        <div class="row mt-4">
+            <div class="col-lg-8 bg-info">
                 <h1>About Me</h1>
             </div>
 
             <div class="row-fluid">
-                <div class="col-lg-8 bg-light">
+                <div class="col-lg-8 bg-info">
 
                     <!-- IMPORTANT! this is code for wrapping text around an image in Bootstrap grid -->
-                    <img width="150px" class="float-left mb-2 mr-4 img-fluid" src="Images/Steve.jpeg">
+                    <img src="Images/Steve.jpeg" width="20%" height: "auto" class="float-left mb-2 mr-4 img-fluid">
+                    <!-- <img src="Images/Steve.jpeg" class="rounded float-right.max-width: 5%"> -->
 
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit eget
@@ -111,13 +112,16 @@
             </div>
     </main>
 
-   <!-- Option 1: Bootstrap Bundle with Popper -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
 
-   <!-- Option 2: Separate Popper and Bootstrap JS -->
-   
-   <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> -->
-  
+
 </body>
+
 </html>
