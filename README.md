@@ -14,6 +14,7 @@ Original PNG files/wireframes can be found in the Images folder (each specifying
 
 
 ## Acceptance Criteria
+The actual assignment ReadMe can be found here:  
 GIVEN a webpage meets accessibility standards...
 
 - WHEN I view the source code
