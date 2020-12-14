@@ -15,36 +15,32 @@ Original PNG files/wireframes can be found in the Images folder (each specifying
 
 ## Acceptance Criteria
 The actual assignment ReadMe can be found here:  
-GIVEN a webpage meets accessibility standards...
 
-- WHEN I view the source code
-    - THEN I find semantic HTML elements
-- WHEN I view the structure of the HTML elements
-    - THEN I find that the elements follow a logical structure independent of styling and positioning
-- WHEN I view the image elements
-    - THEN I find accessible alt attributes
-- WHEN I view the heading attributes
-    - THEN they fall in sequential order
-- WHEN I view the title element
-    - THEN I find a concise, descriptive title
+https://github.com/verusbabb/Responsive-Portfolio/blob/main/Docs/Assignment.md
 
-## Original Code vs Final/Edited Code
-The links below contain the original HTML and CSS files from the working site prior to starting this project.  Compare these to the new .html and .css files in the root directory.
+Specific acceptance criteria from within the full assignment are here:
 
-- https://github.com/verusbabb/01-Homework-Code-Refactor/blob/main/Original%20HTML%2C%20CSS%2C%20and%20website%20png/index.html
-- https://github.com/verusbabb/01-Homework-Code-Refactor/blob/main/Original%20HTML%2C%20CSS%2C%20and%20website%20png/style.css
+- Functional, deployed application (COMPLETE)
+- GitHub repository with README describing the project (COMPLETE)
+- Navbar must be consistent on each page (COMPLETE)
+- Navbar on each page must contain links to Home/About, Contact, and Portfolio pages (COMPLETE)
+- All links must work (COMPLETE - accept links that don't have a working external destination yet)
+- Must use semantic html (COMPLETE)
+- Each page must have valid and correct HTML (use a validation service) (COMPLETE)
+- Must contain your personalized information (bio, name, images, links to social media, etc.) (COMPLETE)
+- Must properly utilize Bootstrap components and grid system (COMPLETE)
 
-For comparison, here are links to the final edited HTML and CSS code
+### Bonus Challenges
 
-- https://github.com/verusbabb/01-Homework-Code-Refactor/blob/main/index.html
-- https://github.com/verusbabb/01-Homework-Code-Refactor/blob/main/style.css
+- Use Bootstrap to make a sticky footer (COMPLETE)
+- Use sub-rows and sub-columns on your portfolio site (COMPLETE)
 
 
 ## Completed Project Link
-This site meets all criteria.  **In addition**, I have made the web site header sticky (stays visible when scrolling) and added a "Contact Us" button in the Header.
+This site meets all requirements, plus bonus challenges and MORE!
 
-Published site
-- https://verusbabb.github.io/01-Homework-Code-Refactor/index.html
+Published site link:
+https://verusbabb.github.io/Responsive-Portfolio/index.html
 
 
 ## Testing
