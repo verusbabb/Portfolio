@@ -43,12 +43,10 @@ Published site link:
 https://verusbabb.github.io/Responsive-Portfolio/index.html
 
 
-## Testing
-Tested using https://webaccessibility.com per recommendation of W3Schools.  
+## Code Validation Testing
+I did a code validation using https://validator.w3.org.  Results indicated:
 
-![](https://github.com/verusbabb/01-Homework-Code-Refactor/blob/main/images/webaccessibillity.com%20test%20results.png)
-
-
-
-
+- Some suggestions about placing "articles" closer to H-tag text. I argue that they are in the correct place!  But still learning some of the subtleties of exactly where semantics tags should sit in a block.
+- Received an error on some form "input-types".  The types I am using are corrrect; verified both accuracy of the input-types and the inaccuracy of the code validator on multiple sites (e.g stackoverflow).  Several people note the error in the validator rather than the error in the code.
+- some indication of open divs.  Tripled checked, they are all associated with a pair/closing div.
 
