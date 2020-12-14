@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- bootstrap requires this meta code -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Me</title>
 
@@ -11,6 +12,7 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 
+<!-- semantic tags and alt tages where applicable (had some questions about when to start sections and articles in grid system) -->
 <body class="bg-light">
         
         <header class="row">
@@ -22,6 +24,8 @@
         
         <nav class="navbar navbar-expand-lg navbar-light bg-info">
         
+            <!-- bootstrap navbar -->
+            <!-- All nav links work -->
             <a class="navbar-brand" href="index.html"><h1>Steve Babb</h1></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,6 +36,7 @@
                         <a class="nav-link" href="index.html">About</a>
                         <a class="nav-link" href="resume.html">Resume</a>
                         <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <!-- Notice active link code -->
                         <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
                     </div>
                 </div>
@@ -44,6 +49,7 @@
 
                 <section class="col-sm-8 pt-4 pb-4 bg-white border border-info">
 
+                    <!-- Use of bootstrap form; submit button is purposefully disabled (will enable when connected to database) -->
                     <h2>Request Info</h2>
 
                         <div class="row">
@@ -61,6 +67,7 @@
                                     <textarea class="form-control mb-4" id="FormControlTextarea" rows="3"
                                         placeholder="Enter message here"></textarea>
                 
+                                    <!-- Button does not link to anything yet; will link when I learn about connecting to databases -->
                                     <button type="submit" class="btn btn-info">
                                         Submit</button>
                                 </form>
@@ -72,7 +79,8 @@
                 </section>>
 
                 <section class="col-sm-4 pt-4 pb-4 bg-white border border-info">
-
+                    
+                    <!-- Using simple card structure with two buttons -->
                     <h2>Connect with me</h2>
 
                         <div class="row">
@@ -92,7 +100,7 @@
                         </div>
 
                 </section>
-                
+
             </div>
 
     </main>

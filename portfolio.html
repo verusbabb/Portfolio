@@ -1,180 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>My Portfolio</title>
+<head>
+    <meta charset="UTF-8">
+    <!-- bootstrap requires this meta code -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
 
-        <!-- Link to Bootstrap stylesheet -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    </head>
+    <!-- Link to Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
 
-    <body class="bg-light">
+<!-- semantic tags and alt text where applicable (had some questions about when to start sections and articles in grid system) -->
 
-            <header class="row">
-                <div class="col-sm">
-                    <img src="Images/familyNarrow.png" alt="Family photo" class="img-fluid">
-                </div>
-                
-            </header>
+<body class="bg-light">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-info">
-                <a class="navbar-brand" href="index.html">
-                    <h1>Steve Babb</h1>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ml-auto">
-                        <a class="nav-link" href="index.html">About</a>
-                        <a class="nav-link" href="resume.html">Resume</a>
-                        <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </div>
-                </div>
+    <header class="row">
+        <div class="col-sm">
+            <img src="Images/familyNarrow.png" alt="Family photo" class="img-fluid">
+        </div>
 
-            </nav>
+    </header>
 
-        <main class="container">
+    <!-- bootstrap navbar -->
+    <!-- All nav links work -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <a class="navbar-brand" href="index.html">
+            <h1>Steve Babb</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="index.html">About</a>
+                <a class="nav-link" href="resume.html">Resume</a>
+                <!-- Notice active link code -->
+                <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+        </div>
 
-            <section>
+    </nav>
 
-                </div class="row pt-2">
-                    <div class="col-sm-12 mt-4 bg-white">
+    <main class="container">
+
+        <!-- Throughout this section, I used my logic to determine where best to start sections and articles.  Need a screen reader to be sure! -->
+        <!-- Heavy use of nested rows/columns/sub-nesting using bootstrap grid in this section. Sub-nesting is BONUS material-->
+        <section>
+
+            </div class="row pt-2">
+            <div class="col-sm-12 mt-4 bg-white">
+
+                <div class="row">
+
+                    <section class="col-sm-8 pt-4 border border-info bg-white">
+
+                        <h2>My Portfolio</h2>
+                        <p>My ever growing list of work to show off my software development skills (in addition to the
+                            site you are looking browsing).</p>
 
                         <div class="row">
 
-                            <section class="col-sm-8 pt-4 border border-info bg-white">
-                                
-                                <h2>My Portfolio</h2>
-                                <p>My ever growing list of work to show off my software development skills (in addition to the site you are looking browsing).</p>
-                            
-                                    <div class="row">
-
-                                        <article class="col-sm-6 bg-white p-4">
-                                            <div class="card mx-auto">
-                                                <img src="Images/Horiseon2.jpeg" alt="Horiseon website thumbnail" class="card-img-top">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Code Refactor</h5>
-                                                    <p class="card-text">Transformed an existing website to be fully accessible.</p>
-                                                    <a href="https://verusbabb.github.io/01-Homework-Code-Refactor/" class="btn btn-info">Check it
-                                                        out</a>
-                                                </div>
-                                            </div>
-                                        </article>
-                    
-                                        <article class="col-sm-6 bg-white p-4">
-                                            <div class="card mx-auto">
-                                                <img src="Images/vcg2.jpg" alt="VCG logo" class="card-img-top">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Coming soon</h5>
-                                                    <p class="card-text">More of my work will eventually appear here.</p>
-                                                    <a href="" class="btn btn-info">Link disabled</a>
-                                                </div>
-                                            </div>
-                                        </article>
-
+                            <!-- Using cards to display images and associated text -->
+                            <!-- Decided to use articles for all of these cards (given the nature of content) -->
+                            <article class="col-sm-6 bg-white p-4">
+                                <div class="card mx-auto">
+                                    <img src="Images/Horiseon2.jpeg" alt="Horiseon website thumbnail"
+                                        class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Code Refactor</h5>
+                                        <p class="card-text">Transformed an existing website to be fully accessible.</p>
+                                        <a href="https://verusbabb.github.io/01-Homework-Code-Refactor/"
+                                            class="btn btn-info">Check it
+                                            out</a>
                                     </div>
+                                </div>
+                            </article>
 
-                                    <div class="row">
-
-                                        <article class="col-sm-6 bg-white p-4">
-                                            <div class="card mx-auto">
-                                                <img src="Images/vcg2.jpg" alt="VCG logo" class="card-img-top">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Coming soon</h5>
-                                                    <p class="card-text">More of my work will eventually appear here.</p>
-                                                    <a href="" class="btn btn-info">Link disabled</a>
-                                                </div>
-                                            </div>
-                                        </article>
-                
-                                        <article class="col-sm-6 bg-white p-4">
-                                            <div class="card mx-auto">
-                                                <img src="Images/vcg2.jpg" alt="VCG logo" class="card-img-top">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Coming soon</h5>
-                                                    <p class="card-text">More of my work will eventually appear here.</p>
-                                                    <a href="" class="btn btn-info">Link disabled</a>
-                                                </div>
-                                            </div>
-                                        </article>
-
-                                    </div>   
-                            
-                                    <div class="row">
-
-                                        <article class="col-sm-6 bg-white p-4">
-                                            <div class="card mx-auto">
-                                                <img src="Images/vcg2.jpg" alt="VCG logo" class="card-img-top">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Code Refactor</h5>
-                                                    <p class="card-text">Transformed an existing website to be fully accessible.</p>
-                                                    <a href="" class="btn btn-info">Link disabled</a>
-                                                </div>
-                                            </div>
-                                        </article>
-                    
-                                        <article class="col-sm-6 bg-white p-4">
-                                            <div class="card mx-auto">
-                                                <img src="Images/vcg2.jpg" alt="VCG logo" class="card-img-top">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Coming soon</h5>
-                                                    <p class="card-text">More of my work will eventually appear here.</p>
-                                                    <a href="" class="btn btn-info">Link disabled</a>
-                                                </div>
-                                            </div>
-                                        </article>
-
+                        <!-- NOTICE: purposefully disabled links for each of the following cards; will enable links when my profile is populated with future project content -->
+                            <article class="col-sm-6 bg-white p-4">
+                                <div class="card mx-auto">
+                                    <img src="Images/vcg2.jpg" alt="VCG logo" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Coming soon</h5>
+                                        <p class="card-text">More of my work will eventually appear here.</p>
+                                        <a href="" class="btn btn-info">Link disabled</a>
                                     </div>
-                            </section>
-
-                            <section class="col-sm-4 pt-4 border border-info bg-white">
-
-                                <h2>My Training</h2>
-                                <p>Intensive software development program learning full stack development.</p>            
-                                        
-                                        <div class="row">
-                                            <article class="col-sm-12 bg-white p-4">
-                                                <div class="card mx-auto">
-                                                    <img src="Images/KU.jpeg" alt="KU Full Stack Flex website thumbnail" class="card-img-top" alt="...">
-                                                </div>
-                                            </article>
-                                        </div>
-
-                                        <div class="row">
-                                            <article class="col-sm-12 bg-white p-4">
-                                                <div class="card mx-auto">
-                                                    <img src="Images/curriculum.jpg" alt="Full Stack Flex cuuriculum" class="card-img-top" alt="...">
-                                                </div>
-                                            </article>
-                                        </div>
-                            </section>
+                                </div>
+                            </article>
 
                         </div>
-                    </div>   
-                        
+
+                        <div class="row">
+
+                            <article class="col-sm-6 bg-white p-4">
+                                <div class="card mx-auto">
+                                    <img src="Images/vcg2.jpg" alt="VCG logo" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Coming soon</h5>
+                                        <p class="card-text">More of my work will eventually appear here.</p>
+                                        <a href="" class="btn btn-info">Link disabled</a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-sm-6 bg-white p-4">
+                                <div class="card mx-auto">
+                                    <img src="Images/vcg2.jpg" alt="VCG logo" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Coming soon</h5>
+                                        <p class="card-text">More of my work will eventually appear here.</p>
+                                        <a href="" class="btn btn-info">Link disabled</a>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <div class="row">
+
+                            <article class="col-sm-6 bg-white p-4">
+                                <div class="card mx-auto">
+                                    <img src="Images/vcg2.jpg" alt="VCG logo" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Code Refactor</h5>
+                                        <p class="card-text">Transformed an existing website to be fully accessible.</p>
+                                        <a href="" class="btn btn-info">Link disabled</a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-sm-6 bg-white p-4">
+                                <div class="card mx-auto">
+                                    <img src="Images/vcg2.jpg" alt="VCG logo" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Coming soon</h5>
+                                        <p class="card-text">More of my work will eventually appear here.</p>
+                                        <a href="" class="btn btn-info">Link disabled</a>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                    </section>
+
+                    <!-- More use cards, sections/articles in nested grid system -->
+                    <section class="col-sm-4 pt-4 border border-info bg-white">
+
+                        <h2>My Training</h2>
+                        <p>Intensive software development program learning full stack development.</p>
+                    
+                    <!-- Throwing KU a bone here (I know Trilogy is behind the scenes!) -->
+                        <div class="row">
+                            <article class="col-sm-12 bg-white p-4">
+                                <div class="card mx-auto">
+                                    <img src="Images/KU.jpeg" alt="KU Full Stack Flex website thumbnail"
+                                        class="card-img-top" alt="...">
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="row">
+                            <article class="col-sm-12 bg-white p-4">
+                                <div class="card mx-auto">
+                                    <img src="Images/curriculum.jpg" alt="Full Stack Flex cuuriculum"
+                                        class="card-img-top" alt="...">
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
                 </div>
-            </section>
-        </main>
-
-        <footer class="footer mt-auto py-3 bg-info text-center">
-            <div class="container">
-                <span class="text-muted">Verus Coding Group, Ltd.</span>
             </div>
-        </footer>
-        <!-- <footer class="bg-info text-center mt-4 pt-2 pb-2">VCG Ltd.</footer> -->
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-            crossorigin="anonymous"></script>
-    </body>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sticky footer! BONUS material -->
+    <footer class="footer mt-auto py-3 bg-info text-center">
+        <div class="container">
+            <span class="text-muted">Verus Coding Group, Ltd.</span>
+        </div>
+    </footer>
+
+    <!-- bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
