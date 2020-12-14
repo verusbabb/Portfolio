@@ -10,7 +10,7 @@ Our only guidance was a series of PNG files showing us wireframes of broad conte
 
 Original PNG files/wireframes can be found in the Images folder (each specifying a conceptual display for various screen resolutions). A sample of one of the wireframes we were provided is below.
 
-![]
+![](https://github.com/verusbabb/Responsive-Portfolio/blob/main/Images/992-portfolio.png)
 
 
 ## Acceptance Criteria
