@@ -1,4 +1,4 @@
-# My Portfolio Project Overview
+# My Portfolio
 In this project, I am building the foundation of my online profile to introduce me to potential clients/employers and to show off my software dev/coding skills.  This site has been built from a blank page, integrating Bootstrap 4.5.3 for CSS.  Not Bootstrap CSS modifications have been made; no additional styling (internal or linked) have been applied.  All content is styled using Bootstrap.  
 
 This site includes: a page to provide some introductory information to Steve Babb (me), both professionally and personally, a page with detailed resume information, a portfolio page that will continually be updated with more work as I complete projects, and a page for contacting/connecting with me.
