@@ -7,7 +7,7 @@ $('#myResume').click(function (event) {
     $('#resume').show();
     $('#hero').hide('slow'); //"slow not working; disappears abruptly.  I really want slideUp('slow') to invoke a more gentle approach to disappearing, but when I try to use slipeUp console says "not a function".
     var download = $("<button>");
-    $(download).text("Download").addClass("btn btn-info").attr("id", "downloadResume");
+    $(download).text("View as PDF").addClass("btn btn-success text-danger text-dark btn-lg").attr("id", "downloadResume");
     $('#myResume').hide();
     $("#downloadBtns").append(download);
     
