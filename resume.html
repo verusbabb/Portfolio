@@ -15,9 +15,10 @@
 </head>
 
 <!-- semantic tags and alt text where applicable (had some questions about when to start sections and articles in grid system) -->
+
 <body class="bg-light">
 
-    <header class="row">
+    <header id='hero' class="row">
         <div class="col-sm">
             <img src="Images/familyNarrow.png" alt="Family photo" class="img-fluid hero">
         </div>
@@ -50,32 +51,42 @@
 
     </nav>
 
-    <main class="container">
+    <main>
 
         <!-- Resume content -->
-        <section>
+        <section class='container'>
+
             <div class="row mt-4">
-                <div class="col-sm-8 pt-4 border-top border-left border-right border-info bg-white">
-                    <h2>My Experience</h2>
+                <div id="downloadBtns" class="col-sm-12 pt-4 d-flex justify-content-center">
+                    <button id="myResume" class="btn btn-info">View Resume</button>
                 </div>
             </div>
 
-            <article class="row">
-                <div class="col-sm-8 bg-white border-left border-bottom border-right border-info p-4">
-                    <div class="embed-responsive embed-responsive-1by1">
-
-                        <!-- Using iframe to embed a google doc to display on page -->
-                        <!-- NOTE: Bullets in resume content are not spacing properly.  This is due to creating resume in word and then converting to a Google Doc.  Will repair soon. -->
-                        <iframe class="embed-responsive-item" src="Docs/Babb_Steve_2020_Resume.html"></iframe>
-
+            <div id='resume' class='container'>
+                <div class="row mt-4 d-flex justify-content-center">
+                    <div class="col-sm-12 pt-4 border-top border-left border-right border-info bg-white">
+                        <h2>My Resume</h2>
                     </div>
                 </div>
-            </article>
+
+
+                <article class="row d-flex justify-content-center">
+                    <div class="col-sm-12 bg-white border-left border-bottom border-right border-info p-4">
+                        <div class="embed-responsive embed-responsive-1by1">
+
+                            <!-- Using iframe to embed a google doc to display on page -->
+                            <!-- NOTE: Bullets in resume content are not spacing properly.  This is due to creating resume in word and then converting to a Google Doc.  Will repair soon. -->
+                            <iframe class="embed-responsive-item" src="Docs/Babb_Steve_2020_Resume.html"></iframe>
+
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
 
     </main>
 
-  <!-- Sticky footer! BONUS material-->
+    <!-- Sticky footer! BONUS material-->
     <footer class="footer mt-auto py-3 bg-info text-center">
         <div class="container">
             <span class="text-muted">Verus Coding Group, Ltd.</span>
@@ -89,7 +100,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
