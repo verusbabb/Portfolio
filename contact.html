@@ -8,100 +8,112 @@
     <title>Contact Me</title>
 
     <!-- Link to Bootstrap stylesheet -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+
+
 </head>
 
 <!-- semantic tags and alt tages where applicable (had some questions about when to start sections and articles in grid system) -->
+
 <body class="bg-light">
-        
-        <header class="row">
-            <div class="col-sm">
-                <img src="Images/familyNarrow.png" alt="Family photo" class="img-fluid">
+
+    <header class="row">
+        <div class="col-sm">
+            <img src="Images/familyNarrow.png" alt="Family photo" class="img-fluid hero">
+        </div>
+
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+
+        <!-- bootstrap navbar -->
+        <!-- All nav links work -->
+        <a class="navbar-brand" href="index.html">
+            <h1>Steve Babb</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="index.html">About</a>
+                <a class="nav-link" href="resume.html">Resume</a>
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                <!-- Notice active link code -->
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
             </div>
-            
-        </header>
-        
-        <nav class="navbar navbar-expand-lg navbar-light bg-info">
-        
-            <!-- bootstrap navbar -->
-            <!-- All nav links work -->
-            <a class="navbar-brand" href="index.html"><h1>Steve Babb</h1></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ml-auto">
-                        <a class="nav-link" href="index.html">About</a>
-                        <a class="nav-link" href="resume.html">Resume</a>
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        <!-- Notice active link code -->
-                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-                    </div>
-                </div>
-            
-        </nav>
+        </div>
+
+    </nav>
 
     <main class="container">
 
-            <div class="row mt-4 pt-4 pb-4">
+        <div class="row mt-4 pt-4 pb-4">
 
-                <section class="col-sm-8 pt-4 pb-4 bg-white border border-info">
+            <section class="col-sm-8 pt-4 pb-4 bg-white border border-info">
 
-                    <!-- Use of bootstrap form; submit button is purposefully disabled (will enable when connected to database) -->
-                    <h2>Request Info</h2>
+                <!-- Use of bootstrap form; submit button is purposefully disabled (will enable when connected to database) -->
+                <h2>Request Info (form temporarily disabled)</h2>
 
-                        <div class="row">
+                <div class="row">
 
-                            <section class="col-sm-12">
+                    <section class="col-sm-12">
 
-                                <form>
-                                    <label for="InputName">Name</label>
-                                    <input type="InputName" class="form-control mb-4" id="InputName" placeholder="Enter name">
-                
-                                    <label for="InputEmail">Email</label>
-                                    <input type="email" class="form-control mb-4" id="InputEmail" placeholder="Enter email">
-                
-                                    <label for="formControlTextarea">Message</label>
-                                    <textarea class="form-control mb-4" id="FormControlTextarea" rows="3"
-                                        placeholder="Enter message here"></textarea>
-                
-                                    <!-- Button does not link to anything yet; will link when I learn about connecting to databases -->
-                                    <button type="submit" class="btn btn-info">
-                                        Submit</button>
-                                </form>
+                        <form>
+                            <label for="InputName">Name</label>
+                            <input type="InputName" class="form-control mb-4" id="InputName" placeholder="Enter name">
 
-                            </section>
+                            <label for="InputEmail">Email</label>
+                            <input type="email" class="form-control mb-4" id="InputEmail" placeholder="Enter email">
 
-                        </div>
+                            <label for="formControlTextarea">Message</label>
+                            <textarea class="form-control mb-4" id="FormControlTextarea" rows="3"
+                                placeholder="Enter message here"></textarea>
 
-                </section>
+                                <address>
+                                    <a href="mailto:steve@verusgroup.com" class='btn btn-info'>Submit</a>
+                                </address>
+                            <!-- </div> -->
+                        </form>
 
-                <section class="col-sm-4 pt-4 pb-4 bg-white border border-info">
-                    
-                    <!-- Using simple card structure with two buttons -->
-                    <h2>Connect with me</h2>
+                    </section>
 
-                        <div class="row">
-                            <div class="col-12-sm pb-4 pl-3 bg-white">
-                                <button type="button" class="btn btn-info">
-                                Email Me (disabled)
-                                </button>
-                            </div>
-                        </div>
+                </div>
 
-                        <div class="row">
-                            <div class="col-12-sm pb-4 pl-3 bg-white">
-                                <a href="https://www.linkedin.com/in/steve-babb/" class="btn btn-info" role="button">
-                                 LinkedIn
-                                </a>
-                            </div>
-                        </div>
+            </section>
 
-                </section>
+            <section class="col-sm-4 pt-4 pb-4 bg-white border border-info">
 
-            </div>
+                <!-- Using simple card structure with two buttons -->
+                <h2>Connect on social media</h2>
+
+                <div class="row">
+                    <!-- <div class="btn-toolbar"> -->
+                    <div class="container social">
+                    <!-- <div class="btn-toolbar"> -->
+                        
+                        <i href="https://www.linkedin.com/in/steve-babb" class="fab fa-linkedin item-1"></i>
+                        <i href="https://www.instagram.com/verusbabb/" class="fab fa-instagram item-2"></i>
+                        <i href="https://twitter.com/verusbabb" class="fab fa-twitter item-3"></i>
+                    <!-- </div> -->
+                    </div>
+                </div>
+
+                <br><br>
+
+                <div class="row">
+                    <div class="container">
+                    <h2>Or email<address><a href="mailto:steve@verusgroup.com"> me</a></address></h2>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
 
     </main>
 
