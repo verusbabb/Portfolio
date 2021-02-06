@@ -10,7 +10,7 @@ $('#myResume').click(function (event) {
         event.preventDefault();
         window.open('Docs/Babb_Steve_2020_Resume.pdf', '_blank'); //Why is this not functional?
     })
-    $(download).text("View as PDF").addClass("btn btn-success text-danger text-dark btn-lg").attr("id", "downloadResume");
+    $(download).text("View as PDF").addClass("btn btn-danger text-light btn-lg").attr("id", "downloadResume");
     $('#myResume').hide();
     $("#downloadBtns").append(download);
 });
