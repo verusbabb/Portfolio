@@ -1,5 +1,5 @@
 .hero {
-    opacity: .8;
+    opacity: .9;
 }
 
 .fab {
@@ -47,8 +47,12 @@
     margin-top: 100px;
 }
 
-.email {
-    font-size: 1.5rem;
-    margin-left: 1rem;
+.contactInfo {
+    font-size: 1.25rem;
+    /* margin-left: 1rem; */
     opacity: .8;
+}
+
+.people {
+    opacity: .85
 }
